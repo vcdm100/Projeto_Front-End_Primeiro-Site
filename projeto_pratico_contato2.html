@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Turismo para Surdos</title>
+    <link rel="stylesheet" href="./css/projeto_pratico_contato.css"/>
+    <script src="./js/projeto_pratico_inscricao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./jQuery/jquery.maskedinput.js"></script>
+    <script src="./jQuery/projeto_pratico_contato2.js"></script>
+    
+</head>
+<body>
+
+    <main>
+
+        <div id="header">
+        <!--Cabeçalho-->
+            <div id="logo">
+                <h1>Turismo para Surdos</h1>
+            </div>
+        <!--Menu-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="./projeto_pratico.html">Home</a></li>
+                    <li><a href="./projeto_pratico_galeria.html">Galeria</a></li>
+                    <li><a href="./projeto_pratico_inscriao.html">Inscrição</a></li>
+                    <li><a href="./projeto_pratico_contato2.html">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    
+        <!--Contato-->
+        <div id="content" class="inscricao">
+        <!--FORMULÁRIO DE CONTATO-->
+        <h1>CONTATO</h1>
+
+        <form id="form" method="post" action="" name="enviarForm">
+        <fieldset>
+
+            <label>Nome</label>
+            <input type="text" name="nome" id="nome"/>
+
+            <label>E-mail</label>
+                <input type="text" name="email" id="email"/>
+
+                <label>Celular</label>
+                <input type="tel" name="celular" id="celular" maxlength="15"/>
+
+                <label>Assunto</label>
+                <select name="assunto" id="assunto">
+                    <option value="">Selecione</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="critica">Crítica</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label>Mensagem</label><div class="restante">( <span id="chars">1000</span> caracteres restantes )</div>
+                <textarea maxlength="1000" rows="3" name="mensagem" id="mensagem"></textarea> 
+
+                <input class="btnSubmit" type="submit" name="submit" value="Enviar"/>
+                <input class="btnSubmit reset" type="reset" value="Limpar"/>
+
+                <div class="msg"></div>
+
+        </fieldset>
+        </form>
+
+        <div class="clear"></div>
+
+    </div>
+    <!--Rodapé-->
+        <div id="footer">
+            Curso de Front-End - Signa - 2022
+        </div>
+
+    </main>
+
+</body>
+</html>
